@@ -17,15 +17,18 @@ body {
 
 .content {
   position: absolute;
-  bottom: 60px;
+  bottom: 0;
   display: block;
-  margin-left: 10px;
-  margin-right: 10px;
+  left: 52.2%;
+  transform: translateX(-50%);
   max-width: 50em;
+  min-width: 39.6em;
+  align-items: center;
 }
 
 h2 {
   font-size: 4rem;
+  line-height: 1.4;
   color: #fff;
   margin: 0;
 }
@@ -37,24 +40,16 @@ span {
 p {
   font-size: 2rem;
   margin: 0;
+  padding: .5em 0 .75em;
 }
 
 .banner {
   position: relative;
+  overflow: hidden;
+  max-height: 500px;
 }
 
 .img-flex {
-  max-height: 500px;
   width: 100%;
   display: block;
-}
-
-@media only screen and (min-width: 60em) {
-
-  .content {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
 }
